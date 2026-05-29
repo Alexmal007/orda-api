@@ -1,0 +1,21 @@
+{
+  "name": "alexmal/orda-api",
+  "description": "Библиотека для работы с API ord-a.ru",
+  "autoload": {
+    "psr-4": {
+      "Alexmal\\OrdaApi\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.2",
+    "psr/http-client": "^1.0",
+    "ext-curl": "*"
+  },
+  "require-dev": {
+    "vimeo/psalm": "^6.16",
+    "monolog/monolog": "^3.10"
+  },
+  "scripts": {
+    "psalm": "psalm"
+  }
+}
