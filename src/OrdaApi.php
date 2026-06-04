@@ -12,7 +12,7 @@ final class OrdaApi
     private ApiV2 $api;
     private ?string $token;
 
-    public function __construct(string $endpoint = "https://api.ord-a.ru/api/v2", LoggerInterface $logger = null, ?TransportInterface $transport = null, string $token = null)
+    public function __construct(string $endpoint = "https://api.ord-a.ru/api/v2", ?LoggerInterface $logger = null, ?TransportInterface $transport = null, string $token = null)
     {
         if ($transport === null) {
             $transport = new Transport\CurlTransport();

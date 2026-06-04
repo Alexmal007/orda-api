@@ -13,7 +13,7 @@ use Psr\Log\LoggerInterface;
 final class ApiV2
 {
     private string $baseUrl;
-    private LoggerInterface $logger;
+    private ?LoggerInterface $logger;
 
     private TransportInterface $transport;
 
